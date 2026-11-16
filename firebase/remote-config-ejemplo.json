@@ -1,0 +1,11 @@
+{
+  "features": [
+    {"key": "modo_oscuro", "label": "Modo oscuro", "enabled": true},
+    {"key": "encuestas", "label": "Encuestas", "enabled": false},
+    {"key": "novedades", "label": "Novedades", "enabled": true}
+  ],
+  "banners": [
+    {"id": "banner_inicio", "title": "Bienvenida", "subtitle": "Configuración desde Firebase"},
+    {"id": "banner_examen", "title": "Examen móvil", "subtitle": "Funciona con datos locales"}
+  ]
+}
