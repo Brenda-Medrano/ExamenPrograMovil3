@@ -79,7 +79,7 @@ class TaskRepository(
                 "Esta tarea tiene una operación pendiente"
             }
             val wasCompleted = snapshot.getBoolean("completada") ?: false
-            val delta = if (wasCompleted) -1 else 1
+            val delta = CounterMath.delta(wasCompleted)
             transaction.update(doc, mapOf(
                 "completada" to !wasCompleted,
                 "pendingId" to operationId,
@@ -140,7 +140,7 @@ class TaskRepository(
                     val marker = currentData.child("applied").child(operationId)
                     if (marker.getValue(Boolean::class.java) != true) {
                         val old = (currentData.child("completadas").value as? Number)?.toLong() ?: 0L
-                        currentData.child("completadas").value = (old + delta).coerceAtLeast(0L)
+                        currentData.child("completadas").value = CounterMath.apply(old, delta, alreadyApplied = false)
                         marker.value = true
                     }
                     return Transaction.success(currentData)
