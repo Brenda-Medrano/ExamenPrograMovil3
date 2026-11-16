@@ -1,6 +1,8 @@
 *.iml
 .gradle
 /local.properties
+# Copiar el JSON desde Firebase Console, nunca subirlo a Git
+**/google-services.json
 /.idea/caches
 /.idea/libraries
 /.idea/modules.xml
@@ -13,3 +15,5 @@
 .externalNativeBuild
 .cxx
 local.properties
+# Copiar el JSON desde Firebase Console, nunca subirlo a Git
+**/google-services.json
