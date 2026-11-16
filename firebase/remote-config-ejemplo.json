@@ -5,15 +5,7 @@
     {"key": "novedades", "label": "Novedades", "enabled": true}
   ],
   "banners": [
-    {
-      "id": "banner_inicio",
-      "title": "Bienvenida",
-      "subtitle": "Configuración desde Firebase"
-    },
-    {
-      "id": "banner_examen",
-      "title": "Examen móvil",
-      "subtitle": "Funciona con datos locales"
-    }
+    {"id": "banner_inicio", "title": "Bienvenida", "subtitle": "Configuración desde Firebase"},
+    {"id": "banner_examen", "title": "Examen móvil", "subtitle": "Funciona con datos locales"}
   ]
 }
