@@ -13,7 +13,12 @@
           "package_name": "com.example.exaprogramolvil3"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "666924776556-o3aqbnhthccomaf86ronhkufpanucndk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyAl4azQbywuEOvhU4cqALTclsViwgftWJQ"
@@ -21,7 +26,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "666924776556-o3aqbnhthccomaf86ronhkufpanucndk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
